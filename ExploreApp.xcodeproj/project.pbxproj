@@ -10,12 +10,18 @@
 		22D2C14D573420FFDCA14817 /* Pods_ExploreApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E4CE6C10C4CB254907A665 /* Pods_ExploreApp.framework */; };
 		6AF1F60C5F5E20A69E4A6D12 /* Pods_ExploreAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987D8B7A1691B4946594690F /* Pods_ExploreAppUITests.framework */; };
 		782A6F921EFB1DA500FEB031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6F911EFB1DA500FEB031 /* AppDelegate.swift */; };
-		782A6F941EFB1DA500FEB031 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6F931EFB1DA500FEB031 /* ViewController.swift */; };
 		782A6F971EFB1DA500FEB031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782A6F951EFB1DA500FEB031 /* Main.storyboard */; };
 		782A6F991EFB1DA500FEB031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782A6F981EFB1DA500FEB031 /* Assets.xcassets */; };
 		782A6F9C1EFB1DA500FEB031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782A6F9A1EFB1DA500FEB031 /* LaunchScreen.storyboard */; };
 		782A6FA71EFB1DA600FEB031 /* ExploreAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FA61EFB1DA600FEB031 /* ExploreAppTests.swift */; };
 		782A6FB21EFB1DA600FEB031 /* ExploreAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FB11EFB1DA600FEB031 /* ExploreAppUITests.swift */; };
+		BFF6BC231F0D6949005094DB /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC1F1F0D6949005094DB /* FancyView.swift */; };
+		BFF6BC241F0D6949005094DB /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC201F0D6949005094DB /* RoundBtn.swift */; };
+		BFF6BC251F0D6949005094DB /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC211F0D6949005094DB /* FancyField.swift */; };
+		BFF6BC261F0D6949005094DB /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC221F0D6949005094DB /* FancyBtn.swift */; };
+		BFF6BC281F0D6961005094DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC271F0D6961005094DB /* Constants.swift */; };
+		BFF6BC2A1F0D69D1005094DB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC291F0D69D1005094DB /* SignInVC.swift */; };
+		BFF6BC2C1F0D6E50005094DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFF6BC2B1F0D6E50005094DB /* GoogleService-Info.plist */; };
 		C859DF52BEF8CA90CB98EDBF /* Pods_ExploreAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC25D2759F4DB7E6AB7930F8 /* Pods_ExploreAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +47,6 @@
 		61AD327564F0ACD8232057B8 /* Pods-ExploreAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreAppTests/Pods-ExploreAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		782A6F8E1EFB1DA500FEB031 /* ExploreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782A6F911EFB1DA500FEB031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		782A6F931EFB1DA500FEB031 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		782A6F961EFB1DA500FEB031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		782A6F981EFB1DA500FEB031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782A6F9B1EFB1DA500FEB031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +61,13 @@
 		987D8B7A1691B4946594690F /* Pods_ExploreAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A161F82B527ACE1138D09E95 /* Pods-ExploreApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreApp/Pods-ExploreApp.release.xcconfig"; sourceTree = "<group>"; };
 		A2E4CE6C10C4CB254907A665 /* Pods_ExploreApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF6BC1F1F0D6949005094DB /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		BFF6BC201F0D6949005094DB /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		BFF6BC211F0D6949005094DB /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		BFF6BC221F0D6949005094DB /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		BFF6BC271F0D6961005094DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BFF6BC291F0D69D1005094DB /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		BFF6BC2B1F0D6E50005094DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC25D2759F4DB7E6AB7930F8 /* Pods_ExploreAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94ABB9DD815A8BAB7D29C14 /* Pods-ExploreAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreAppUITests/Pods-ExploreAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F1F8615A2FB675E2B120D84E /* Pods-ExploreAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreAppTests/Pods-ExploreAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,12 +149,16 @@
 		782A6F901EFB1DA500FEB031 /* ExploreApp */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6BC1B1F0D68E5005094DB /* Model */,
+				BFF6BC1A1F0D68DE005094DB /* View */,
+				BFF6BC191F0D68C4005094DB /* Controller */,
+				BFF6BC1C1F0D68F6005094DB /* Util */,
 				782A6F911EFB1DA500FEB031 /* AppDelegate.swift */,
-				782A6F931EFB1DA500FEB031 /* ViewController.swift */,
 				782A6F951EFB1DA500FEB031 /* Main.storyboard */,
 				782A6F981EFB1DA500FEB031 /* Assets.xcassets */,
 				782A6F9A1EFB1DA500FEB031 /* LaunchScreen.storyboard */,
 				782A6F9D1EFB1DA500FEB031 /* Info.plist */,
+				BFF6BC2B1F0D6E50005094DB /* GoogleService-Info.plist */,
 			);
 			path = ExploreApp;
 			sourceTree = "<group>";
@@ -163,6 +179,40 @@
 				782A6FB31EFB1DA600FEB031 /* Info.plist */,
 			);
 			path = ExploreAppUITests;
+			sourceTree = "<group>";
+		};
+		BFF6BC191F0D68C4005094DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6BC291F0D69D1005094DB /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BFF6BC1A1F0D68DE005094DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6BC1F1F0D6949005094DB /* FancyView.swift */,
+				BFF6BC201F0D6949005094DB /* RoundBtn.swift */,
+				BFF6BC211F0D6949005094DB /* FancyField.swift */,
+				BFF6BC221F0D6949005094DB /* FancyBtn.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BFF6BC1B1F0D68E5005094DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BFF6BC1C1F0D68F6005094DB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6BC271F0D6961005094DB /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				782A6F9C1EFB1DA500FEB031 /* LaunchScreen.storyboard in Resources */,
+				BFF6BC2C1F0D6E50005094DB /* GoogleService-Info.plist in Resources */,
 				782A6F991EFB1DA500FEB031 /* Assets.xcassets in Resources */,
 				782A6F971EFB1DA500FEB031 /* Main.storyboard in Resources */,
 			);
@@ -446,8 +497,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				782A6F941EFB1DA500FEB031 /* ViewController.swift in Sources */,
+				BFF6BC251F0D6949005094DB /* FancyField.swift in Sources */,
+				BFF6BC2A1F0D69D1005094DB /* SignInVC.swift in Sources */,
+				BFF6BC241F0D6949005094DB /* RoundBtn.swift in Sources */,
 				782A6F921EFB1DA500FEB031 /* AppDelegate.swift in Sources */,
+				BFF6BC281F0D6961005094DB /* Constants.swift in Sources */,
+				BFF6BC231F0D6949005094DB /* FancyView.swift in Sources */,
+				BFF6BC261F0D6949005094DB /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +756,7 @@
 				782A6FB81EFB1DA600FEB031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		782A6FB91EFB1DA600FEB031 /* Build configuration list for PBXNativeTarget "ExploreAppTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +765,7 @@
 				782A6FBB1EFB1DA600FEB031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		782A6FBC1EFB1DA600FEB031 /* Build configuration list for PBXNativeTarget "ExploreAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +774,7 @@
 				782A6FBE1EFB1DA600FEB031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
