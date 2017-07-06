@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lsh-Wy-yTe">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="Nst-JY-iod">
+            <objects>
+                <viewController id="Lsh-Wy-yTe" customClass="MapViewController" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTi-kt-Kmk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tou-ZL-JQW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uRb-pu-qGI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlP-ic-bkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91.875" y="-705.63380281690138"/>
+        </scene>
+        
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="MapGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +41,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5w-X1-EqB" customClass="FancyView" customModule="MapGame" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5w-X1-EqB" customClass="FancyView" customModule="ExploreApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Player1 Icon" translatesAutoresizingMaskIntoConstraints="NO" id="HOO-bk-3Ob">
@@ -83,7 +102,7 @@
                                     <constraint firstItem="Y4u-Ey-cE3" firstAttribute="bottom" secondItem="c5Z-I4-TZf" secondAttribute="bottomMargin" id="bwU-la-LOo"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtY-dU-sdk" customClass="RoundBtn" customModule="MapGame" customModuleProvider="target">
+                            <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtY-dU-sdk" customClass="RoundBtn" customModule="ExploreApp" customModuleProvider="target">
                                 <rect key="frame" x="98" y="222" width="125" height="125"/>
                                 <color key="backgroundColor" red="0.35269182920455933" green="0.4413420557975769" blue="0.69439387321472168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -94,6 +113,10 @@
                                     <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tge-R3-uBO"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76c-dK-CyK">
+                                <rect key="frame" x="40" y="357" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -111,6 +134,9 @@
                             <constraint firstItem="mtY-dU-sdk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wpi-8B-h0H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="76c-dK-CyK" id="dsK-m8-r1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
