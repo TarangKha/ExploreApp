@@ -1,4 +1,31 @@
-ExploreApp.xcodeproj/project.xcworkspace/xcuserdata/
+OS X
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Generated files
+*.o
+*.pyc
+*.hi
+
+#Python modules
+MANIFEST
+dist/
+build/
+
+# Backup files
+*~.nib
+\#*#
+.#*
+*.swp
+*.un~
 ExploreApp.xcodeproj/xcuserdata/matthewdaumas.xcuserdatad/
 ExploreApp.xcworkspace/xcuserdata/matthewdaumas.xcuserdatad/UserInterfaceState.xcuserstate
 .DS_Store
