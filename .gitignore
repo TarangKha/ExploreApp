@@ -26,6 +26,9 @@ build/
 .#*
 *.swp
 *.un~
+<<<<<<< HEAD
 ExploreApp.xcodeproj/xcuserdata/matthewdaumas.xcuserdatad/
 ExploreApp.xcworkspace/xcuserdata/matthewdaumas.xcuserdatad/UserInterfaceState.xcuserstate
 .DS_Store
+=======
+>>>>>>> 77bfbd9d7680e04da6a232d6aaf8149a038392ab
