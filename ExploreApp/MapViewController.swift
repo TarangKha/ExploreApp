@@ -71,12 +71,18 @@ class MapViewController: UIViewController {
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.isMyLocationEnabled = true
-        
+                
         // Add the map to the view, hide it until we've got a location update.
         view.addSubview(mapView)
+        // TK: This next line sends the mapView to draw behind any other UI elements.
+        view.sendSubview(toBack: mapView)
         mapView.isHidden = true
         
         listLikelyPlaces()
+        
+//        //Adding the UIButtons for other Views
+//        let FriendsBtn = UIButton(frame: CGRect(x:0,y:0,width:50,height:50))
+//        self.view.addSubview(FriendsBtn)
     }
     
     // Populate the array with the list of likely places.
