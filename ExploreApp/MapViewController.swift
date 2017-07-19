@@ -17,7 +17,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, GMSMapViewDelegate{
     
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
@@ -53,7 +53,11 @@ class MapViewController: UIViewController {
         
         
         listLikelyPlaces()
+        
     }
+    
+    
+    //*** Place Event Handler Code HERE***
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +80,7 @@ class MapViewController: UIViewController {
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.isMyLocationEnabled = true
-                
+        
         // Add the map to the view, hide it until we've got a location update.
         view.addSubview(mapView)
         // TK: This next line sends the mapView to draw behind any other UI elements.
@@ -84,6 +88,8 @@ class MapViewController: UIViewController {
         mapView.isHidden = true
         
         listLikelyPlaces()
+        
+        mapView.delegate = self
         
         //Adding Generic Google Marker
 //        let position = CLLocationCoordinate2D(latitude: 30.28, longitude: -97.74)
@@ -113,6 +119,7 @@ class MapViewController: UIViewController {
         marker.isFlat = true
         marker.snippet = "Weakness: Homeless People"
         pcl = marker
+        pcl?.isTappable = true;
         
     }
     
@@ -148,15 +155,28 @@ class MapViewController: UIViewController {
         }
     }
     
-    //Part of the custom Animation for Google Marker
-    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
-        UIView.animate(withDuration: 5.0, animations: { () -> Void in
-            self.pclView?.tintColor = .blue
-        }, completion: {(finished) in
-            // Stop tracking view changes to allow CPU to idle.
-            self.pcl?.tracksViewChanges = false
-        })
+/*
+    //Testing Event on Map Tap
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
     }
+*/
+    
+    //Testing Event on infoWindowTap of pcl marker
+    func mapView(_ mapView: GMSMapView!, didTapInfoWindowOf pcl: GMSMarker!) {
+        print("hi")
+    }
+    
+    
+    //Part of the custom Animation for Google Marker
+//    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+//        UIView.animate(withDuration: 5.0, animations: { () -> Void in
+//            self.pclView?.tintColor = .blue
+//        }, completion: {(finished) in
+//            // Stop tracking view changes to allow CPU to idle.
+//            self.pcl?.tracksViewChanges = false
+//        })
+//    }
 }
 
 
@@ -180,7 +200,9 @@ extension MapViewController: CLLocationManagerDelegate {
         }
         
         listLikelyPlaces()
+        
     }
+
     
     // Handle authorization for the location manager.
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
