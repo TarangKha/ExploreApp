@@ -25,6 +25,10 @@ class MapViewController: UIViewController {
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
     
+    //for animating the google marker
+    var pcl: GMSMarker?
+    var pclView: UIImageView?
+    
     // An array to hold the list of likely places.
     var likelyPlaces: [GMSPlace] = []
     
@@ -46,6 +50,7 @@ class MapViewController: UIViewController {
             marker.snippet = selectedPlace?.formattedAddress
             marker.map = mapView
         }
+        
         
         listLikelyPlaces()
     }
@@ -80,10 +85,37 @@ class MapViewController: UIViewController {
         
         listLikelyPlaces()
         
-//        //Adding the UIButtons for other Views
-//        let FriendsBtn = UIButton(frame: CGRect(x:0,y:0,width:50,height:50))
-//        self.view.addSubview(FriendsBtn)
+        //Adding Generic Google Marker
+//        let position = CLLocationCoordinate2D(latitude: 30.28, longitude: -97.74)
+//        let marker = GMSMarker(position: position)
+//        marker.title = "Hello World"
+//        marker.map = mapView
+        
+        //Custom Image for Google Marker
+//        let position = CLLocationCoordinate2D(latitude: 30.28, longitude: -97.74)
+//        let pcl = GMSMarker(position: position)
+//        pcl.title = "Perry Castaneda Library"
+//        pcl.icon = UIImage(named: "blue_sq")
+//        pcl.map = mapView
+        
+        //Custom Animation for Google Marker
+        let BlueSq = UIImage(named: "blue_sq")!.withRenderingMode(.alwaysTemplate)
+        let markerView = UIImageView(image: #imageLiteral(resourceName: "blue_sq"))
+        markerView.tintColor = .red
+        pclView = markerView
+        
+        let position = CLLocationCoordinate2D(latitude: 30.28, longitude: -97.74)
+        let marker = GMSMarker(position: position)
+        marker.title = "Perry Castaneda Library 2.0"
+        marker.iconView = markerView
+        marker.tracksViewChanges = true
+        marker.map = mapView
+        marker.isFlat = true
+        marker.snippet = "Weakness: Homeless People"
+        pcl = marker
+        
     }
+    
     
     // Populate the array with the list of likely places.
     func listLikelyPlaces() {
@@ -115,7 +147,18 @@ class MapViewController: UIViewController {
             }
         }
     }
+    
+    //Part of the custom Animation for Google Marker
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        UIView.animate(withDuration: 5.0, animations: { () -> Void in
+            self.pclView?.tintColor = .blue
+        }, completion: {(finished) in
+            // Stop tracking view changes to allow CPU to idle.
+            self.pcl?.tracksViewChanges = false
+        })
+    }
 }
+
 
 // Delegates to handle events for the location manager.
 extension MapViewController: CLLocationManagerDelegate {
