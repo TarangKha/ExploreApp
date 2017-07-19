@@ -165,6 +165,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate{
     //Testing Event on infoWindowTap of pcl marker
     func mapView(_ mapView: GMSMapView!, didTapInfoWindowOf pcl: GMSMarker!) {
         print("hi")
+        performSegue(withIdentifier: "Seg_Map_to_PopUp", sender: nil)
     }
     
     
