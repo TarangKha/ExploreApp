@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lsh-Wy-yTe">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+>>>>>>> ea14fd8dee5728c2934173d266c24a3d32bb1fb0
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,12 +25,137 @@
                     <view key="view" contentMode="scaleToFill" id="uRb-pu-qGI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZsV-B0-h7Q">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Friends" id="YYp-iW-v0l">
+                                        <connections>
+                                            <segue destination="OJ5-6A-4cg" kind="showDetail" id="Tid-IC-kWV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Inventory" id="j7J-Qo-THb">
+                                        <connections>
+                                            <segue destination="9dh-Tb-ReZ" kind="presentation" id="Uai-ZY-uqJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0">
+                                        <connections>
+                                            <segue destination="o2G-b9-qKq" kind="popoverPresentation" popoverAnchorBarButtonItem="YMe-nK-ZQ0" id="dOA-3F-Mha">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Settings" id="YKA-oi-qg5">
+                                        <connections>
+                                            <segue destination="SSm-iX-rni" kind="show" id="vUu-D4-tRB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="aPD-A4-fE9" kind="presentation" identifier="Seg_Map_to_PopUp" id="PUS-VF-dXQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OlP-ic-bkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91.875" y="-705.63380281690138"/>
+            <point key="canvasLocation" x="1005" y="123.59154929577466"/>
+        </scene>
+        <!--Pop UpVC-->
+        <scene sceneID="HT3-rO-avQ">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="aPD-A4-fE9" customClass="PopUpVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N3d-Nl-Zgi"/>
+                        <viewControllerLayoutGuide type="bottom" id="tW0-eC-zIy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2I3-zt-1RD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vK-DL-8VS">
+                                <rect key="frame" x="25" y="181" width="271" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rff-G7-OVX">
+                                        <rect key="frame" x="10" y="8" width="250" height="106"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDl-mF-lio">
+                                        <rect key="frame" x="145" y="122" width="115" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Fight!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="lew-Hz-7l6" kind="showDetail" id="iW7-YJ-YCS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtH-uP-Ppw">
+                                        <rect key="frame" x="10" y="122" width="115" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.86432951688766479" green="0.26346782681787234" blue="0.25705304702794668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Dismiss">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Seg_PopUp_to_Map:" destination="aPD-A4-fE9" eventType="touchUpInside" id="zhv-F3-TYF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51455853393226858" green="1" blue="0.58913119808966063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="0vK-DL-8VS" id="NDD-Je-Mew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCz-JF-8ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951.875" y="123.59154929577466"/>
+        </scene>
+        <!--Temp CombatVC-->
+        <scene sceneID="NAM-Nj-kdy">
+            <objects>
+                <viewController id="lew-Hz-7l6" customClass="TempCombatVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NEO-vt-qLl"/>
+                        <viewControllerLayoutGuide type="bottom" id="1zA-wO-Eyv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4i-mO-v76">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-Vb-tbh">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Map From Combat"/>
+                                <connections>
+                                    <action selector="Seg_Combat_to_Map:" destination="lew-Hz-7l6" eventType="touchUpInside" id="pf4-GM-ttD"/>
+                                    <action selector="Seg_Settings_to_Map:" destination="SSm-iX-rni" eventType="touchUpInside" id="mSE-yj-e1F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eld-57-UpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3026" y="124"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -112,10 +241,16 @@
                                     <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tge-R3-uBO"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76c-dK-CyK">
-                                <rect key="frame" x="40" y="357" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-v3-urI">
+                                <rect key="frame" x="95" y="392" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
+                                <color key="backgroundColor" red="1" green="0.77737257390000003" blue="0.22975645850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Temp Login Button"/>
+                                <connections>
+                                    <segue destination="Lsh-Wy-yTe" kind="presentation" id="Exr-XQ-kiE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -133,13 +268,122 @@
                             <constraint firstItem="mtY-dU-sdk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wpi-8B-h0H"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="mapView" destination="76c-dK-CyK" id="dsK-m8-r1f"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127.2" y="124.58770614692655"/>
+            <point key="canvasLocation" x="146" y="124"/>
+        </scene>
+        <!--FriendsVC-->
+        <scene sceneID="hwx-nN-u3I">
+            <objects>
+                <viewController id="OJ5-6A-4cg" customClass="FriendsVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rlV-KX-lM8"/>
+                        <viewControllerLayoutGuide type="bottom" id="7wK-y9-CY0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pmc-rm-1Uo" customClass="FriendsVc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hud-em-iHv">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Map From Friends"/>
+                                <connections>
+                                    <action selector="Seg_Friends_to_Map:" destination="OJ5-6A-4cg" eventType="touchUpInside" id="OQA-CR-0ug"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="218-ut-aif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.375" y="891.54929577464793"/>
+        </scene>
+        <!--InventoryVC-->
+        <scene sceneID="UVH-wv-WA7">
+            <objects>
+                <viewController id="9dh-Tb-ReZ" customClass="InventoryVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x9d-8K-hnb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PPp-GP-cCy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w8N-K1-Ejh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxO-n9-WCF">
+                                <rect key="frame" x="16" y="248" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Map From Inventory"/>
+                                <connections>
+                                    <action selector="Seg_Inven_to_Map:" destination="9dh-Tb-ReZ" eventType="touchUpInside" id="Qqb-rK-gaz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlS-3a-UpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="1043"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="LkI-rz-nv4">
+            <objects>
+                <viewController id="o2G-b9-qKq" customClass="ProfileVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TRE-zF-IYH"/>
+                        <viewControllerLayoutGuide type="bottom" id="JtU-Ud-GwV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PE1-iW-qym">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUp-4W-oYZ">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Map From Profile"/>
+                                <connections>
+                                    <action selector="Seg_Profile_to_Map:" destination="o2G-b9-qKq" eventType="touchUpInside" id="sWk-RM-KkA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5P-vm-FFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1367" y="1043"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="fc6-zM-FwY">
+            <objects>
+                <viewController id="SSm-iX-rni" customClass="SettingsVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tvh-A2-NCB"/>
+                        <viewControllerLayoutGuide type="bottom" id="28y-hB-vGa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gAh-cO-krG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1e-5c-iYO">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Map From Settings"/>
+                                <connections>
+                                    <action selector="Seg_Settings_to_Map:" destination="SSm-iX-rni" eventType="touchUpInside" id="nZs-SU-3a6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncZ-aC-XoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154" y="871"/>
         </scene>
     </scenes>
     <resources>
