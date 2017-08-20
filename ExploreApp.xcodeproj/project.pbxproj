@@ -17,6 +17,8 @@
 		782A6FB21EFB1DA600FEB031 /* ExploreAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FB11EFB1DA600FEB031 /* ExploreAppUITests.swift */; };
 		782A6FF11F0DB1CF00FEB031 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FF01F0DB1CF00FEB031 /* MapViewController.swift */; };
 		782A6FF31F0DB1F900FEB031 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FF21F0DB1F900FEB031 /* PlacesViewController.swift */; };
+		BF3F53931F49E12D00395009 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53921F49E12D00395009 /* Monster.swift */; };
+		BF3F53951F49E36000395009 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53941F49E36000395009 /* Player.swift */; };
 		BF4F84EA1F1EEF6C0011B752 /* CombatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F84E91F1EEF6C0011B752 /* CombatVC.swift */; };
 		BFF6BC231F0D6949005094DB /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC1F1F0D6949005094DB /* FancyView.swift */; };
 		BFF6BC241F0D6949005094DB /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC201F0D6949005094DB /* RoundBtn.swift */; };
@@ -66,6 +68,8 @@
 		987D8B7A1691B4946594690F /* Pods_ExploreAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A161F82B527ACE1138D09E95 /* Pods-ExploreApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreApp/Pods-ExploreApp.release.xcconfig"; sourceTree = "<group>"; };
 		A2E4CE6C10C4CB254907A665 /* Pods_ExploreApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3F53921F49E12D00395009 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		BF3F53941F49E36000395009 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		BF4F84E91F1EEF6C0011B752 /* CombatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombatVC.swift; sourceTree = "<group>"; };
 		BFF6BC1F1F0D6949005094DB /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		BFF6BC201F0D6949005094DB /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 		BFF6BC1B1F0D68E5005094DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF3F53921F49E12D00395009 /* Monster.swift */,
+				BF3F53941F49E36000395009 /* Player.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -511,9 +517,11 @@
 				BFF6BC251F0D6949005094DB /* FancyField.swift in Sources */,
 				BFF6BC2A1F0D69D1005094DB /* SignInVC.swift in Sources */,
 				BFF6BC241F0D6949005094DB /* RoundBtn.swift in Sources */,
+				BF3F53951F49E36000395009 /* Player.swift in Sources */,
 				BF4F84EA1F1EEF6C0011B752 /* CombatVC.swift in Sources */,
 				782A6F921EFB1DA500FEB031 /* AppDelegate.swift in Sources */,
 				BFF6BC281F0D6961005094DB /* Constants.swift in Sources */,
+				BF3F53931F49E12D00395009 /* Monster.swift in Sources */,
 				BFF6BC231F0D6949005094DB /* FancyView.swift in Sources */,
 				BFF6BC261F0D6949005094DB /* FancyBtn.swift in Sources */,
 				782A6FF11F0DB1CF00FEB031 /* MapViewController.swift in Sources */,
