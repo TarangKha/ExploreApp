@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lsh-Wy-yTe">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
->>>>>>> ea14fd8dee5728c2934173d266c24a3d32bb1fb0
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,28 +26,10 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Friends" id="YYp-iW-v0l">
-                                        <connections>
-                                            <segue destination="OJ5-6A-4cg" kind="showDetail" id="Tid-IC-kWV"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Inventory" id="j7J-Qo-THb">
-                                        <connections>
-                                            <segue destination="9dh-Tb-ReZ" kind="presentation" id="Uai-ZY-uqJ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0">
-                                        <connections>
-                                            <segue destination="o2G-b9-qKq" kind="popoverPresentation" popoverAnchorBarButtonItem="YMe-nK-ZQ0" id="dOA-3F-Mha">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Settings" id="YKA-oi-qg5">
-                                        <connections>
-                                            <segue destination="SSm-iX-rni" kind="show" id="vUu-D4-tRB"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Friends" id="YYp-iW-v0l"/>
+                                    <barButtonItem title="Inventory" id="j7J-Qo-THb"/>
+                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0"/>
+                                    <barButtonItem title="Settings" id="YKA-oi-qg5"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -146,7 +124,6 @@
                                 <state key="normal" title="Back to Map From Combat"/>
                                 <connections>
                                     <action selector="Seg_Combat_to_Map:" destination="lew-Hz-7l6" eventType="touchUpInside" id="pf4-GM-ttD"/>
-                                    <action selector="Seg_Settings_to_Map:" destination="SSm-iX-rni" eventType="touchUpInside" id="mSE-yj-e1F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -155,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eld-57-UpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3026" y="124"/>
+            <point key="canvasLocation" x="2957" y="124"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -214,7 +191,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-I4-TZf">
                                 <rect key="frame" x="0.0" y="493" width="320" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you do not have an account, one will be automatically created for you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4u-Ey-cE3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4u-Ey-cE3">
                                         <rect key="frame" x="0.0" y="8" width="320" height="59"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -271,124 +248,103 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146" y="124"/>
+            <point key="canvasLocation" x="-5.625" y="-954.92957746478874"/>
         </scene>
-        <!--FriendsVC-->
-        <scene sceneID="hwx-nN-u3I">
+        <!--CombatVC-->
+        <scene sceneID="riZ-O5-Mv0">
             <objects>
-                <viewController id="OJ5-6A-4cg" customClass="FriendsVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mmq-V5-ygj" customClass="CombatVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rlV-KX-lM8"/>
-                        <viewControllerLayoutGuide type="bottom" id="7wK-y9-CY0"/>
+                        <viewControllerLayoutGuide type="top" id="Ipw-Zt-TT3"/>
+                        <viewControllerLayoutGuide type="bottom" id="EiH-kZ-fRV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Pmc-rm-1Uo" customClass="FriendsVc">
+                    <view key="view" contentMode="scaleToFill" id="i79-L8-pBf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hud-em-iHv">
-                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-EX-i5u">
+                                <rect key="frame" x="0.0" y="284" width="80" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back to Map From Friends"/>
+                                <color key="backgroundColor" red="0.0" green="0.74901960779999999" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Attack1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="Seg_Friends_to_Map:" destination="OJ5-6A-4cg" eventType="touchUpInside" id="OQA-CR-0ug"/>
+                                    <action selector="Attack1:" destination="mmq-V5-ygj" eventType="touchUpInside" id="YhL-ho-8qq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1L-Zv-b13">
+                                <rect key="frame" x="80" y="284" width="80" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.91372549020000005" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-TL-48U">
+                                <rect key="frame" x="160" y="284" width="80" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.74901960779999999" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGj-24-cj9">
+                                <rect key="frame" x="240" y="284" width="80" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.91372549020000005" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOl-B5-mx4">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Monster" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-hJ-gHF">
+                                        <rect key="frame" x="9" y="75" width="142" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBh-Rz-8mt">
+                                <rect key="frame" x="160" y="0.0" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player2 Icon" translatesAutoresizingMaskIntoConstraints="NO" id="NH9-ab-IOP">
+                                        <rect key="frame" x="18" y="152" width="124" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player1 Icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Qk-og-ykn">
+                                        <rect key="frame" x="18" y="35" width="124" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="0.56660932720000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="218-ut-aif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzT-Jy-nrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114.375" y="891.54929577464793"/>
+            <point key="canvasLocation" x="2957" y="-694"/>
         </scene>
-        <!--InventoryVC-->
-        <scene sceneID="UVH-wv-WA7">
+        <!--Storyboard Reference-->
+        <scene sceneID="GKG-kb-uMn">
             <objects>
-                <viewController id="9dh-Tb-ReZ" customClass="InventoryVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="x9d-8K-hnb"/>
-                        <viewControllerLayoutGuide type="bottom" id="PPp-GP-cCy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="w8N-K1-Ejh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxO-n9-WCF">
-                                <rect key="frame" x="16" y="248" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back to Map From Inventory"/>
-                                <connections>
-                                    <action selector="Seg_Inven_to_Map:" destination="9dh-Tb-ReZ" eventType="touchUpInside" id="Qqb-rK-gaz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BlS-3a-UpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder id="iqt-xP-nKa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUm-Oc-eXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="1043"/>
-        </scene>
-        <!--ProfileVC-->
-        <scene sceneID="LkI-rz-nv4">
-            <objects>
-                <viewController id="o2G-b9-qKq" customClass="ProfileVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TRE-zF-IYH"/>
-                        <viewControllerLayoutGuide type="bottom" id="JtU-Ud-GwV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PE1-iW-qym">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUp-4W-oYZ">
-                                <rect key="frame" x="16" y="269" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back to Map From Profile"/>
-                                <connections>
-                                    <action selector="Seg_Profile_to_Map:" destination="o2G-b9-qKq" eventType="touchUpInside" id="sWk-RM-KkA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T5P-vm-FFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1367" y="1043"/>
-        </scene>
-        <!--SettingsVC-->
-        <scene sceneID="fc6-zM-FwY">
-            <objects>
-                <viewController id="SSm-iX-rni" customClass="SettingsVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Tvh-A2-NCB"/>
-                        <viewControllerLayoutGuide type="bottom" id="28y-hB-vGa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gAh-cO-krG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1e-5c-iYO">
-                                <rect key="frame" x="16" y="269" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back to Map From Settings"/>
-                                <connections>
-                                    <action selector="Seg_Settings_to_Map:" destination="SSm-iX-rni" eventType="touchUpInside" id="nZs-SU-3a6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ncZ-aC-XoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2154" y="871"/>
+            <point key="canvasLocation" x="2528" y="-340"/>
         </scene>
     </scenes>
     <resources>
         <image name="Buster Sword" width="700" height="700"/>
         <image name="Map Icon" width="700" height="700"/>
+        <image name="Monster" width="700" height="700"/>
         <image name="Player1 Icon" width="700" height="700"/>
         <image name="Player2 Icon" width="700" height="700"/>
         <image name="f" width="352" height="328"/>
