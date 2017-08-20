@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,28 +26,10 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Friends" id="YYp-iW-v0l">
-                                        <connections>
-                                            <segue destination="OJ5-6A-4cg" kind="showDetail" id="Tid-IC-kWV"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Inventory" id="j7J-Qo-THb">
-                                        <connections>
-                                            <segue destination="9dh-Tb-ReZ" kind="presentation" id="Uai-ZY-uqJ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0">
-                                        <connections>
-                                            <segue destination="o2G-b9-qKq" kind="popoverPresentation" popoverAnchorBarButtonItem="YMe-nK-ZQ0" id="dOA-3F-Mha">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Settings" id="YKA-oi-qg5">
-                                        <connections>
-                                            <segue destination="SSm-iX-rni" kind="show" id="vUu-D4-tRB"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Friends" id="YYp-iW-v0l"/>
+                                    <barButtonItem title="Inventory" id="j7J-Qo-THb"/>
+                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0"/>
+                                    <barButtonItem title="Settings" id="YKA-oi-qg5"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -142,7 +124,6 @@
                                 <state key="normal" title="Back to Map From Combat"/>
                                 <connections>
                                     <action selector="Seg_Combat_to_Map:" destination="lew-Hz-7l6" eventType="touchUpInside" id="pf4-GM-ttD"/>
-                                    <action selector="Seg_Settings_to_Map:" destination="SSm-iX-rni" eventType="touchUpInside" id="mSE-yj-e1F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eld-57-UpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3026" y="124"/>
+            <point key="canvasLocation" x="2957" y="124"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -237,7 +218,7 @@
                                     <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tge-R3-uBO"/>
                                 </connections>
                             </button>
-                           <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-v3-urI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-v3-urI">
                                 <rect key="frame" x="95" y="392" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.77737257390000003" blue="0.22975645850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -349,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzT-Jy-nrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791.20000000000005" y="-956.67166416791611"/>
+            <point key="canvasLocation" x="2957" y="-694"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="GKG-kb-uMn">
@@ -357,6 +338,7 @@
                 <viewControllerPlaceholder id="iqt-xP-nKa" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUm-Oc-eXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2528" y="-340"/>
         </scene>
     </scenes>
     <resources>
