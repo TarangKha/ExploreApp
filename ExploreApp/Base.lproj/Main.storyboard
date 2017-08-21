@@ -10,6 +10,118 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--FriendsVC-->
+        <scene sceneID="oLS-0y-ybQ">
+            <objects>
+                <viewController id="mjh-xE-NY2" customClass="FriendsVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oES-cr-XFW"/>
+                        <viewControllerLayoutGuide type="bottom" id="k52-ka-9Pa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LGX-UN-c1W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0e-gS-c7u">
+                                <rect key="frame" x="66" y="269" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to Map from Friends"/>
+                                <connections>
+                                    <action selector="Seg_Friends_to_Map:" destination="mjh-xE-NY2" eventType="touchUpInside" id="oyj-h9-oOq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dwb-X8-jXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="988"/>
+        </scene>
+        <!--InventoryVC-->
+        <scene sceneID="SNA-y5-Zan">
+            <objects>
+                <viewController id="7Ay-SO-SfW" customClass="InventoryVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LOn-fk-dlb"/>
+                        <viewControllerLayoutGuide type="bottom" id="BmR-M0-JTQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3z3-OZ-0pz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo4-IE-QxI">
+                                <rect key="frame" x="60" y="269" width="201" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to map from Inventory"/>
+                                <connections>
+                                    <action selector="Seg_Inven_to_Map:" destination="7Ay-SO-SfW" eventType="touchUpInside" id="eoT-16-muu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zl2-ve-Tu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="1111"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="PwK-3o-JZH">
+            <objects>
+                <viewController id="SJx-Mw-1zR" customClass="ProfileVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EVN-Oi-GXh"/>
+                        <viewControllerLayoutGuide type="bottom" id="zNE-Tn-EjZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vzT-Ql-Vib">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fj-qx-LF5">
+                                <rect key="frame" x="70" y="269" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to map from Profile"/>
+                                <connections>
+                                    <action selector="Seg_Profile_to_Map:" destination="SJx-Mw-1zR" eventType="touchUpInside" id="OXf-Vu-sbn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehm-zW-WZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="1110"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="8W4-MW-5Wx">
+            <objects>
+                <viewController id="gDT-Ju-zB2" customClass="SettingsVC" customModule="ExploreApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qXO-aV-NJ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="oyQ-nF-7E4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KTd-eW-MeR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2L-xh-Kjp">
+                                <rect key="frame" x="63" y="269" width="194" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to map from Settings"/>
+                                <connections>
+                                    <action selector="Seg_Settings_to_Map:" destination="gDT-Ju-zB2" eventType="touchUpInside" id="DP0-jI-oJC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZo-d9-uVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="1021"/>
+        </scene>
         <!--Map View Controller-->
         <scene sceneID="Nst-JY-iod">
             <objects>
@@ -26,10 +138,26 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Friends" id="YYp-iW-v0l"/>
-                                    <barButtonItem title="Inventory" id="j7J-Qo-THb"/>
-                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0"/>
-                                    <barButtonItem title="Settings" id="YKA-oi-qg5"/>
+                                    <barButtonItem title="Friends" id="YYp-iW-v0l">
+                                        <connections>
+                                            <segue destination="mjh-xE-NY2" kind="show" id="8dF-gs-XIm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Inventory" id="j7J-Qo-THb">
+                                        <connections>
+                                            <segue destination="7Ay-SO-SfW" kind="show" id="ueh-aW-yyt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Profile" id="YMe-nK-ZQ0">
+                                        <connections>
+                                            <segue destination="SJx-Mw-1zR" kind="show" id="TKX-Mk-Fpg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Settings" id="YKA-oi-qg5">
+                                        <connections>
+                                            <segue destination="gDT-Ju-zB2" kind="show" id="Pga-W5-I8S"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
