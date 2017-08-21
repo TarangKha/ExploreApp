@@ -17,15 +17,15 @@
 		782A6FB21EFB1DA600FEB031 /* ExploreAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FB11EFB1DA600FEB031 /* ExploreAppUITests.swift */; };
 		782A6FF11F0DB1CF00FEB031 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FF01F0DB1CF00FEB031 /* MapViewController.swift */; };
 		782A6FF31F0DB1F900FEB031 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A6FF21F0DB1F900FEB031 /* PlacesViewController.swift */; };
-		BF3F53931F49E12D00395009 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53921F49E12D00395009 /* Monster.swift */; };
-		BF3F53951F49E36000395009 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53941F49E36000395009 /* Player.swift */; };
-		BF4F84EA1F1EEF6C0011B752 /* CombatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F84E91F1EEF6C0011B752 /* CombatVC.swift */; };
 		787BA1C11F1EBC4400DC99C9 /* FriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C01F1EBC4400DC99C9 /* FriendsVC.swift */; };
 		787BA1C31F1EBC6500DC99C9 /* InventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C21F1EBC6500DC99C9 /* InventoryVC.swift */; };
 		787BA1C51F1EBC7000DC99C9 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C41F1EBC7000DC99C9 /* ProfileVC.swift */; };
 		787BA1C71F1EBC7D00DC99C9 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C61F1EBC7D00DC99C9 /* SettingsVC.swift */; };
 		787BA1C91F201A5C00DC99C9 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C81F201A5B00DC99C9 /* PopUpVC.swift */; };
 		787BA1CB1F201D7300DC99C9 /* TempCombatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1CA1F201D7300DC99C9 /* TempCombatVC.swift */; };
+		BF3F53931F49E12D00395009 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53921F49E12D00395009 /* Monster.swift */; };
+		BF3F53951F49E36000395009 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53941F49E36000395009 /* Player.swift */; };
+		BF4F84EA1F1EEF6C0011B752 /* CombatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F84E91F1EEF6C0011B752 /* CombatVC.swift */; };
 		BFF6BC231F0D6949005094DB /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC1F1F0D6949005094DB /* FancyView.swift */; };
 		BFF6BC241F0D6949005094DB /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC201F0D6949005094DB /* RoundBtn.swift */; };
 		BFF6BC251F0D6949005094DB /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6BC211F0D6949005094DB /* FancyField.swift */; };
@@ -325,7 +325,7 @@
 				TargetAttributes = {
 					782A6F8D1EFB1DA500FEB031 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = DBH3568482;
+						DevelopmentTeam = M5PB84W75A;
 						ProvisioningStyle = Automatic;
 					};
 					782A6FA11EFB1DA600FEB031 = {
@@ -733,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DBH3568482;
+				DEVELOPMENT_TEAM = M5PB84W75A;
 				INFOPLIST_FILE = ExploreApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KoalaFox.ExploreApp;
@@ -750,7 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DBH3568482;
+				DEVELOPMENT_TEAM = M5PB84W75A;
 				INFOPLIST_FILE = ExploreApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KoalaFox.ExploreApp;
