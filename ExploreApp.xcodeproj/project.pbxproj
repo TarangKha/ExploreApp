@@ -23,6 +23,11 @@
 		787BA1C71F1EBC7D00DC99C9 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C61F1EBC7D00DC99C9 /* SettingsVC.swift */; };
 		787BA1C91F201A5C00DC99C9 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1C81F201A5B00DC99C9 /* PopUpVC.swift */; };
 		787BA1CB1F201D7300DC99C9 /* TempCombatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787BA1CA1F201D7300DC99C9 /* TempCombatVC.swift */; };
+		78F1A61F1F4F9E79000025B4 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1A61E1F4F9E79000025B4 /* Armor.swift */; };
+		78F1A6281F5490AA000025B4 /* testHelm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1A6271F5490AA000025B4 /* testHelm.swift */; };
+		78F1A62A1F54A0B1000025B4 /* testChest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1A6291F54A0B1000025B4 /* testChest.swift */; };
+		78F1A62C1F54A0BE000025B4 /* testLegs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1A62B1F54A0BE000025B4 /* testLegs.swift */; };
+		78F1A62E1F54A0C8000025B4 /* testWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F1A62D1F54A0C8000025B4 /* testWeapon.swift */; };
 		BF3F53931F49E12D00395009 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53921F49E12D00395009 /* Monster.swift */; };
 		BF3F53951F49E36000395009 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F53941F49E36000395009 /* Player.swift */; };
 		BF4F84EA1F1EEF6C0011B752 /* CombatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F84E91F1EEF6C0011B752 /* CombatVC.swift */; };
@@ -76,6 +81,11 @@
 		787BA1C61F1EBC7D00DC99C9 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		787BA1C81F201A5B00DC99C9 /* PopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
 		787BA1CA1F201D7300DC99C9 /* TempCombatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempCombatVC.swift; sourceTree = "<group>"; };
+		78F1A61E1F4F9E79000025B4 /* Armor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		78F1A6271F5490AA000025B4 /* testHelm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testHelm.swift; sourceTree = "<group>"; };
+		78F1A6291F54A0B1000025B4 /* testChest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testChest.swift; sourceTree = "<group>"; };
+		78F1A62B1F54A0BE000025B4 /* testLegs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testLegs.swift; sourceTree = "<group>"; };
+		78F1A62D1F54A0C8000025B4 /* testWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testWeapon.swift; sourceTree = "<group>"; };
 		906ACD572ED35F363E907DB1 /* Pods-ExploreApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreApp/Pods-ExploreApp.debug.xcconfig"; sourceTree = "<group>"; };
 		987D8B7A1691B4946594690F /* Pods_ExploreAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExploreAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A161F82B527ACE1138D09E95 /* Pods-ExploreApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExploreApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExploreApp/Pods-ExploreApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +213,17 @@
 			path = ExploreAppUITests;
 			sourceTree = "<group>";
 		};
+		78F1A62F1F54D789000025B4 /* testArmor */ = {
+			isa = PBXGroup;
+			children = (
+				78F1A62D1F54A0C8000025B4 /* testWeapon.swift */,
+				78F1A6271F5490AA000025B4 /* testHelm.swift */,
+				78F1A6291F54A0B1000025B4 /* testChest.swift */,
+				78F1A62B1F54A0BE000025B4 /* testLegs.swift */,
+			);
+			name = testArmor;
+			sourceTree = "<group>";
+		};
 		BFF6BC191F0D68C4005094DB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,8 +255,10 @@
 		BFF6BC1B1F0D68E5005094DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78F1A62F1F54D789000025B4 /* testArmor */,
 				BF3F53921F49E12D00395009 /* Monster.swift */,
 				BF3F53941F49E36000395009 /* Player.swift */,
+				78F1A61E1F4F9E79000025B4 /* Armor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -558,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				787BA1CB1F201D7300DC99C9 /* TempCombatVC.swift in Sources */,
+				78F1A6281F5490AA000025B4 /* testHelm.swift in Sources */,
 				787BA1C71F1EBC7D00DC99C9 /* SettingsVC.swift in Sources */,
 				787BA1C51F1EBC7000DC99C9 /* ProfileVC.swift in Sources */,
 				782A6FF31F0DB1F900FEB031 /* PlacesViewController.swift in Sources */,
@@ -568,11 +592,15 @@
 				BF4F84EA1F1EEF6C0011B752 /* CombatVC.swift in Sources */,
 				787BA1C11F1EBC4400DC99C9 /* FriendsVC.swift in Sources */,
 				787BA1C31F1EBC6500DC99C9 /* InventoryVC.swift in Sources */,
+				78F1A62A1F54A0B1000025B4 /* testChest.swift in Sources */,
+				78F1A61F1F4F9E79000025B4 /* Armor.swift in Sources */,
 				782A6F921EFB1DA500FEB031 /* AppDelegate.swift in Sources */,
 				BFF6BC281F0D6961005094DB /* Constants.swift in Sources */,
 				BF3F53931F49E12D00395009 /* Monster.swift in Sources */,
 				BFF6BC231F0D6949005094DB /* FancyView.swift in Sources */,
+				78F1A62E1F54A0C8000025B4 /* testWeapon.swift in Sources */,
 				787BA1C91F201A5C00DC99C9 /* PopUpVC.swift in Sources */,
+				78F1A62C1F54A0BE000025B4 /* testLegs.swift in Sources */,
 				BFF6BC261F0D6949005094DB /* FancyBtn.swift in Sources */,
 				782A6FF11F0DB1CF00FEB031 /* MapViewController.swift in Sources */,
 			);
