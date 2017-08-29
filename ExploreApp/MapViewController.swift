@@ -164,7 +164,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate{
     
     //Testing Event on infoWindowTap of pcl marker
     func mapView(_ mapView: GMSMapView!, didTapInfoWindowOf pcl: GMSMarker!) {
-        print("hi")
+        print("the fight button worked - fromMapVC")
         performSegue(withIdentifier: "Seg_Map_to_PopUp", sender: nil)
     }
     
