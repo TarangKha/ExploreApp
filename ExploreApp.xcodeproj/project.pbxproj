@@ -348,7 +348,7 @@
 				TargetAttributes = {
 					782A6F8D1EFB1DA500FEB031 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = M5PB84W75A;
+						DevelopmentTeam = DBH3568482;
 						ProvisioningStyle = Automatic;
 					};
 					782A6FA11EFB1DA600FEB031 = {
@@ -764,7 +764,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = M5PB84W75A;
+				DEVELOPMENT_TEAM = DBH3568482;
 				INFOPLIST_FILE = ExploreApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KoalaFox.ExploreApp;
@@ -783,7 +783,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = M5PB84W75A;
+				DEVELOPMENT_TEAM = DBH3568482;
 				INFOPLIST_FILE = ExploreApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KoalaFox.ExploreApp;
