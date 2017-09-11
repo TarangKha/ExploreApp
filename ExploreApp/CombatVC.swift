@@ -19,11 +19,15 @@ class CombatVC: UIViewController {
     let testPlayer = Player(name: "TK", health: 100, damage: 10, weapon: testWeapon(), helm: testHelm(), chest: testChest(), legs: testLegs());
     //
     
-    
+    var monsterAttackTimer = Timer()
+    var playerCooldownTimer = Timer()
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        monsterAttackTimer = Timer.scheduledTimer(timeInterval: 10.0, target:self, selector: #selector(self.monsterAttack), userInfo: target, repeats: true)
+ 
 
     }
 
@@ -32,8 +36,24 @@ class CombatVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func monsterAttack(){
+        print("yo");
+        testMonster.attack(target: testPlayer);
+    }
+    
+    func unhide(){
+        Attack1Btn.isHidden = false;
+        //replace the loading animation back with the button
+    }
+    
+    @IBOutlet weak var Attack1Btn: UIButton!
     @IBAction func Attack1(_ sender: UIButton) {
+        // Hide/Replace Button with loading animation
+        Attack1Btn.isHidden = true
+        // Start x-amount of time Timer (example. 5 seconds)
+        playerCooldownTimer = Timer.scheduledTimer(timeInterval: 3.0, target:self, selector: #selector(self.unhide), userInfo: target, repeats: true)
+        
+        
         print("GIR: Before Attack: ")
         print("GIR: ", testMonster.name, " Health: ", testMonster.getHealth());
         print("GIR: ", testPlayer.name, " Health: ", testPlayer.getHealth());
